@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    const state = params.get('state');
+    if (code) {
+      window.location.href = `http://localhost:3000/auth/tiktok/callback?code=${code}&state=${state}`;
+    }
+  </script>
+</head>
+<body>Redirecting to Asti Content Tool...</body>
+</html>
